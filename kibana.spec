@@ -1,7 +1,7 @@
 # TODO
 # - configs to webapps
 # - webserver config
-Summary:	Make sense of a mountain of logs Now in Ruby!
+Summary:	Web interface to Logstash and ElasticSearch
 Name:		kibana
 Version:	0.2.0
 Release:	0.3
@@ -22,6 +22,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_appdir	%{_datadir}/%{name}
 
 %description
+Kibana is a highly scalable interface for Logstash and ElasticSearch that
+allows you to efficiently search, graph, analyze and otherwise make sense of a
+mountain of logs.
 
 %prep
 %setup -q -n Kibana-%{version}
